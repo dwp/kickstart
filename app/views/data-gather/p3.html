@@ -26,19 +26,19 @@
             <ul class="hmcts-sub-navigation__list">
 
                 <li class="hmcts-sub-navigation__item">
-                    <a class="hmcts-sub-navigation__link" href="v1">
+                    <a class="hmcts-sub-navigation__link" href="p1">
                         Employer application
                     </a>
                 </li>
 
                 <li class="hmcts-sub-navigation__item">
-                    <a class="hmcts-sub-navigation__link"  href="v2">
+                    <a class="hmcts-sub-navigation__link"  href="p2">
                         Processing
                     </a>
                 </li>
 
                 <li class="hmcts-sub-navigation__item">
-                    <a class="hmcts-sub-navigation__link" aria-current="page" href="v3">
+                    <a class="hmcts-sub-navigation__link" aria-current="page" href="p3">
                         Approval
                     </a>
                 </li>
@@ -52,6 +52,17 @@
 
                 </h1>
             </legend>
+
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="sort">
+                    Recomended decision
+                </label>
+                <select class="govuk-select" id="sort" name="sort">
+                    <option value="published">Approve</option>
+                    <option value="updated" selected>Reject</option>
+            
+                </select>
+            </div>
             <div class="govuk-form-group">
                 <label class="govuk-label" for="width-20">
                      Rejection Reason
@@ -65,12 +76,7 @@ Date sent for Re-work                </label>
                 <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
             </div>
 
-            <div class="govuk-form-group">
-                <label class="govuk-label" for="width-20">
-Recommended Decision                </label>
-                <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
-            </div>
-
+     
             <div class="govuk-form-group">
                 <label class="govuk-label" for="width-20">
                      Date Application sent to Decision Board Secretariat</label>
