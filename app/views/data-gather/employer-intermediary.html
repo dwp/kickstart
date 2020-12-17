@@ -1,59 +1,54 @@
- {% extends "layout.html" %} {% block pageTitle %} GOV.UK Prototype Kit {% endblock %} {% block content %}
-
+{% extends "layout.html" %} {% block pageTitle %} GOV.UK Prototype Kit {% endblock %} {% block content %}
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
         <h1 class="govuk-heading-xl">
-Manage Kickstart Scheme Applications
+            Manage Kickstart Scheme applications
         </h1>
         <div class="form-group">
-<p class="govuk-body">Use this service to manage Kickstart Scheme applocations for employers and intermediaries.</p>
-</div>
-<br>
-<div class="govuk-grid-row">
-    <div class="govuk-grid-column-one-third">
-        <div class="card">
-            <div class="container">
-                <h1 class="govuk-heading-m">Employers</h1>
-                <hr>
-                <a class="hmcts-sub-navigation__link" href="p1">
-                    Add employer application
-                </a>
-                <a class="hmcts-sub-navigation__link" href="">
-                    Find employer application
-                </a>
-                <a class="hmcts-sub-navigation__link" href="">
-                    View all employer applications
-                </a>
-                <p> &nbsp; </p>
-                <p> &nbsp; </p>
+            <p class="govuk-body">Use this service to process and assess Kickstart Scheme applications for employers and Kickstart gateways. This
+                includes entering the application information from the application PDF as well as managing the status of
+                due diligence checks and board approvals.</p>
+        </div>
+        <br>
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-third">
+                <div class="card">
+                    <div class="container">
+                        <h1 class="govuk-heading-m">Employers</h1>
+                        <hr>
+                        <a class="hmcts-sub-navigation__link" href="p1">
+                            Add employer application
+                        </a>
+                        <a class="hmcts-sub-navigation__link" href="">
+                            Find employer application
+                        </a>
+                        <a class="hmcts-sub-navigation__link" href="">
+                            View all employer applications
+                        </a>
+                        <p> &nbsp; </p>
+                        <p> &nbsp; </p>
+                    </div>
+                </div>
+            </div>
+            <div class="govuk-grid-column-one-third">
+                <div class="card">
+                    <div class="container">
+                        <h1 class="govuk-heading-m">Kickstart gateways</h1>
+                        <hr>
+                        <a class="hmcts-sub-navigation__link" href="">
+                            Add Kickstart gateway application
+                        </a>
+                        <a class="hmcts-sub-navigation__link" href="Report_AllSuppliers">
+                            Find Kickstart gateway application
+                        </a>
+                        <a class="hmcts-sub-navigation__link" href="Report_AllSuppliers">
+                            View all Kickstart gateway applications
+                        </a>
+                        <p> &nbsp; </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="govuk-grid-column-one-third">
-        <div class="card">
-            <div class="container">
-                <h1 class="govuk-heading-m">Intermediaries</h1>
-                <hr>
-                <a class="hmcts-sub-navigation__link" href="">
-                    Add intermediary application
-                </a>
-               
-                <a class="hmcts-sub-navigation__link" href="Report_AllSuppliers">
-                    Find intermediary application
-                </a>
-                <a class="hmcts-sub-navigation__link" href="Report_AllSuppliers">
-                    View all intermediary applications
-                </a>
-                <p> &nbsp; </p>
-            </div>
-        </div>
-    </div>
-   
 </div>
-
-
-
-    </div>
-</div>
-
-{% endblock %}
+{% endblock %} Message Rebecca Mahay

@@ -1,4 +1,4 @@
- {% extends "layout.html" %} {% block pageTitle %} GOV.UK Prototype Kit {% endblock %} {% block content %}
+{% extends "layout.html" %} {% block pageTitle %} GOV.UK Prototype Kit {% endblock %} {% block content %}
 <!DOCTYPE html>
 
 <head>
@@ -8,7 +8,6 @@
 
 <body>
     <!-- Copy and paste component HTML-->
-
     <script src="assets/application.js"></script>
 </body>
 
@@ -17,35 +16,28 @@
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
         <h1 class="govuk-heading-xl">
-         Kickstart applications for employers
+            Employer application
         </h1>
-
-       
-<nav class="hmcts-sub-navigation" aria-label="Sub navigation">
-
-    <ul class="hmcts-sub-navigation__list">
-
-        <li class="hmcts-sub-navigation__item">
-            <a class="hmcts-sub-navigation__link" aria-current="page" href="p1">
-                Employer application
-            </a>
-        </li>
-
-        <li class="hmcts-sub-navigation__item">
-            <a class="hmcts-sub-navigation__link" href="p2">
-                Processing
-            </a>
-        </li>
-
-        <li class="hmcts-sub-navigation__item">
-            <a class="hmcts-sub-navigation__link" href="p3">
-               Approval
-            </a>
-        </li>
-
-    </ul>
-
-</nav>        <fieldset class="govuk-fieldset">
+        <nav class="hmcts-sub-navigation" aria-label="Sub navigation">
+            <ul class="hmcts-sub-navigation__list">
+                <li class="hmcts-sub-navigation__item">
+                    <a class="hmcts-sub-navigation__link" aria-current="page" href="p1">
+                        Employer application
+                    </a>
+                </li>
+                <li class="hmcts-sub-navigation__item">
+                    <a class="hmcts-sub-navigation__link" href="p2">
+                        Process
+                    </a>
+                </li>
+                <li class="hmcts-sub-navigation__item">
+                    <a class="hmcts-sub-navigation__link" href="p3">
+                        Approve
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <fieldset class="govuk-fieldset">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                 <h1 class="govuk-fieldset__heading">
                     Application references
@@ -53,143 +45,123 @@
             </legend>
             <div class="govuk-form-group">
                 <label class="govuk-label" for="width-20">
-                 Applicant reference number
+                    Application ID
                 </label>
                 <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
             </div>
-    
             <div class="govuk-form-group">
                 <label class="govuk-label" for="width-20">
-                     DWP full reference number
+                    Full reference number
                 </label>
                 <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
             </div>
-    
             <div class="govuk-form-group">
                 <label class="govuk-label" for="width-20">
-                 Application date
+                    Application date
                 </label>
                 <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
             </div>
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-        <h1 class="govuk-fieldset__heading">
-            Employer details
-        </h1>
-    </legend>
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+                    Employer details
+                </h1>
+            </legend>
             <div class="govuk-form-group">
                 <label class="govuk-label" for="width-20">
-                     Application type
+                    Application type
                 </label>
                 <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
             </div>
-    
             <div class="govuk-form-group">
                 <label class="govuk-label" for="width-20">
                     Name of applicant
                 </label>
                 <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
             </div>
-    
             <div class="govuk-form-group">
                 <label class="govuk-label" for="width-20">
-                     Person answering enquiries
+                    Person answering enquiries
                 </label>
                 <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
             </div>
-    
             <div class="govuk-form-group">
                 <label class="govuk-label" for="width-20">
-                     Application contact details
+                    Application contact details
                 </label>
                 <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
             </div>
-    
             <div class="govuk-form-group">
                 <label class="govuk-label" for="width-20">
-                     Organisation name
+                    Organisation name
                 </label>
                 <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
             </div>
-    
             <div class="govuk-form-group">
                 <label class="govuk-label" for="width-20">
-                     Companies House registration number or Charity Commission number
+                    Companies House registration number or Charity Commission number
                 </label>
                 <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
             </div>
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-        <h1 class="govuk-fieldset__heading">
-             Kickstart vacancy details
-        </h1>
-    </legend>
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+                    Kickstart job placement details
+                </h1>
+            </legend>
             <div class="govuk-form-group">
                 <label class="govuk-label" for="width-3">
-                     Vacancies offered
+                    Number of job placements
                 </label>
                 <input class="govuk-input govuk-input--width-3" id="width-3" name="width-3" type="number">
             </div>
-    
-           
-
             <div class="govuk-form-group">
                 <h1 class="govuk-label-wrapper">
-                    
                 </h1>
                 <p>
-What sort of roles are you planning to create for the Kickstart Scheme?                </p>
+                    What sort of roles are you planning to create for the Kickstart Scheme? </p>
                 <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
             </div>
-    
-
-
-                    <div class="govuk-form-group">
-                        <h1 class="govuk-label-wrapper">
-                    
-                        </h1>
-                        <p>
-                     What information do you have to show us that your vacancy is just for the Kickstart Scheme?
-                        <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
-                    </div>
-
-
-                        <div class="govuk-form-group">
-                            <h1 class="govuk-label-wrapper">
-                        
-                            </h1>
-                            <p>
-                     How will you support the long term employability of young people?
-                            <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
-                        </div>
-           
-          
             <div class="govuk-form-group">
-                <label class="govuk-label" for="width-20">
-                 Where will your Kickstart vacancies be based?
-                </label>
-                <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text"><br>
-                <br>
-                <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text"><br>
-                <br>
-                <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text"><br>
-
+                <h1 class="govuk-label-wrapper">
+                </h1>
+                <p>
+                    What information do you have to show us that your job placement is just for the Kickstart Scheme?
+                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
             </div>
-    
+            <div class="govuk-form-group">
+                <h1 class="govuk-label-wrapper">
+                </h1>
+                <p>
+                    How will you support the long term employability of young people?
+                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+            </div>
             <div class="govuk-form-group">
                 <label class="govuk-label" for="width-20">
-                    Employer Contact Name
+                    Where will your Kickstart Scheme job placements be based?
                 </label>
                 <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+                <br>
+                <br>
+                <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+                <br>
+                <br>
+                <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+                <br>
             </div>
-    
             <div class="govuk-form-group">
                 <label class="govuk-label" for="width-20">
-                    Employer Phone Number
+                    Name
                 </label>
                 <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
             </div>
             <div class="govuk-form-group">
                 <label class="govuk-label" for="width-20">
-                    Employer Email
+                    Telephone number
+                </label>
+                <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+            </div>
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="width-20">
+                    Email
                 </label>
                 <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
             </div>
@@ -211,10 +183,9 @@ What sort of roles are you planning to create for the Kickstart Scheme?         
                 </label>
                 <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
             </div>
-<button class="govuk-button" data-module="govuk-button">
-    Submit
-</button>
+            <button class="govuk-button" data-module="govuk-button">
+                Submit
+            </button>
     </div>
 </div>
-
 {% endblock %}
