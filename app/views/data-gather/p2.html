@@ -1,4 +1,4 @@
- {% extends "layout.html" %} {% block pageTitle %} GOV.UK Prototype Kit {% endblock %} {% block content %}
+{% extends "layout.html" %} {% block pageTitle %} GOV.UK Prototype Kit {% endblock %} {% block content %}
 <!DOCTYPE html>
 
 <head>
@@ -18,7 +18,7 @@
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
         <h1 class="govuk-heading-xl">
-            Apply for a Kickstart Scheme Grant for Employers
+            Manage employer application
         </h1>
 
 
@@ -28,19 +28,19 @@
 
                 <li class="hmcts-sub-navigation__item">
                     <a class="hmcts-sub-navigation__link" href="p1">
-                        Employer application
+                        Confirm PDF
                     </a>
                 </li>
 
                 <li class="hmcts-sub-navigation__item">
-                    <a class="hmcts-sub-navigation__link"  aria-current="page" href="p2">
-                        Processing
+                    <a class="hmcts-sub-navigation__link" aria-current="page" href="p2">
+                        Process
                     </a>
                 </li>
 
                 <li class="hmcts-sub-navigation__item">
                     <a class="hmcts-sub-navigation__link" href="p3">
-                        Approval
+                        Approve
                     </a>
                 </li>
 
@@ -50,33 +50,34 @@
         <fieldset class="govuk-fieldset">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                 <h1 class="govuk-fieldset__heading">
-                   
+
                 </h1>
             </legend>
             <div class="govuk-form-group">
                 <label class="govuk-label" for="width-20">
-                     Date Application Form received
+                    Date application received
                 </label>
                 <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
             </div>
 
             <div class="govuk-form-group">
                 <label class="govuk-label" for="width-20">
-                 Expected Application Process completed Date
+                    Expected date application completed
                 </label>
                 <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
             </div>
 
             <div class="govuk-form-group">
                 <label class="govuk-label" for="width-20">
-                 Date work started on application
+                    Date application processing started
                 </label>
                 <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
             </div>
-            
-            <button class="govuk-button" data-module="govuk-button">
-                Submit
-            </button>
+
+        <a href="p3" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+            Save and continue
+        
+        </a>
     </div>
 </div>
 
