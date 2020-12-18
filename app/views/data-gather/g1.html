@@ -15,41 +15,36 @@
 <a href="javascript:history.go(-1)" class="govuk-back-link">Back</a>
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-xl">
-            Employer application
-        </h1>
+        <h1 class="govuk-heading-xl"> Manage Kickstart gateway application </h1>
         <nav class="hmcts-sub-navigation" aria-label="Sub navigation">
             <ul class="hmcts-sub-navigation__list">
                 <li class="hmcts-sub-navigation__item">
-                    <a class="hmcts-sub-navigation__link" aria-current="page" href="g1">
-                        Employer application
-                    </a>
+                    <a class="hmcts-sub-navigation__link" href="g1"> Confirm PDF </a>
                 </li>
                 <li class="hmcts-sub-navigation__item">
-                    <a class="hmcts-sub-navigation__link" href="g2">
-                        Process
-                    </a>
+                    <a class="hmcts-sub-navigation__link" href="g2"> Process </a>
                 </li>
                 <li class="hmcts-sub-navigation__item">
-                    <a class="hmcts-sub-navigation__link" href="g3">
-                        Approve
-                    </a>
+                    <a class="hmcts-sub-navigation__link" aria-current="page" href="g3"> Approve </a>
                 </li>
             </ul>
         </nav>
         <fieldset class="govuk-fieldset">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                <h1 class="govuk-fieldset__heading">
-                    Application references
-                </h1>
+                <h1 class="govuk-fieldset__heading"> </h1>
             </legend>
             <div class="govuk-form-group">
-                <label class="govuk-label" for="width-20">
-                    Application ID
-                </label>
-                <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+                <label class="govuk-label" for="sort"> Recomended decision </label>
+                <select class="govuk-select" id="sort" name="sort">
+                    <option value="published">Approve</option>
+                    <option value="updated" selected>Reject</option>
+                </select>
             </div>
             <div class="govuk-form-group">
+
+                <label class="govuk-label" for="width-20"> Date sent for rework </label>
+                <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20"
+                    type="text"> </div>
                 <label class="govuk-label" for="width-20">
                     Full reference number
                 </label>
@@ -199,32 +194,23 @@
                 <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
             </div>
             <div class="govuk-form-group">
-                <label class="govuk-label" for="width-20">
-                    Email
-                </label>
-                <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
-            </div>
+                <label class="govuk-label" for="width-20"> Reason for rejection</label>
+                <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20"
+                    type="text"> </div>
             <div class="govuk-form-group">
-                <label class="govuk-label" for="width-20">
-                    Vacancy Holder Name
-                </label>
-                <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
-            </div>
+                <label class="govuk-label" for="width-20"> Date sent to Decision Board Secretariat</label>
+                <input class="govuk-input govuk-input--width-20" id="width-20"
+                    name="width-20" type="text"> </div>
             <div class="govuk-form-group">
-                <label class="govuk-label" for="width-20">
-                    Vacancy Holder Phone Number
-                </label>
-                <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
-            </div>
+                <label class="govuk-label" for="width-20"> Date of Decision Board </label>
+                <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20"
+                    type="text"> </div>
             <div class="govuk-form-group">
-                <label class="govuk-label" for="width-20">
-                    Vacancy Holder Email
-                </label>
-                <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
-            </div>
-            <button class="govuk-button" data-module="govuk-button">
-                Submit
-            </button>
-    </div>
-</div>
-{% endblock %}
+                <label class="govuk-label" for="width-20"> Approval Board outcome</label>
+                <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20"
+                    type="text"> </div>
+<a href="g2" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+    Save and continue
+
+</a>    </div>
+</div>{% endblock %}

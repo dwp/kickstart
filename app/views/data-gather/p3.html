@@ -1,4 +1,4 @@
- {% extends "layout.html" %} {% block pageTitle %} GOV.UK Prototype Kit {% endblock %} {% block content %}
+{% extends "layout.html" %} {% block pageTitle %} GOV.UK Prototype Kit {% endblock %} {% block content %}
 <!DOCTYPE html>
 
 <head>
@@ -20,7 +20,7 @@
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
         <h1 class="govuk-heading-xl">
-            Apply for a Kickstart Scheme Grant for Employers
+            Manage employer application
         </h1>
 
 
@@ -30,19 +30,19 @@
 
                 <li class="hmcts-sub-navigation__item">
                     <a class="hmcts-sub-navigation__link" href="p1">
-                        Employer application
+                        Confirm PDF
                     </a>
                 </li>
 
                 <li class="hmcts-sub-navigation__item">
-                    <a class="hmcts-sub-navigation__link"  href="p2">
-                        Processing
+                    <a class="hmcts-sub-navigation__link" href="p2">
+                        Process
                     </a>
                 </li>
 
                 <li class="hmcts-sub-navigation__item">
                     <a class="hmcts-sub-navigation__link" aria-current="page" href="p3">
-                        Approval
+                        Approve
                     </a>
                 </li>
 
@@ -61,45 +61,47 @@
                     Recomended decision
                 </label>
                 <select class="govuk-select" id="sort" name="sort">
-                    <option value="published">Approved</option>
-                    <option value="updated" selected>Rejected</option>
+                    <option value="published">Approve</option>
+                    <option value="updated" selected>Reject</option>
 
-            
+
                 </select>
             </div>
-           
+
 
             <div class="govuk-form-group">
                 <label class="govuk-label" for="width-20">
-Date sent for Re-work                </label>
+                    Date sent for rework </label>
                 <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
             </div>
-<div class="govuk-form-group">
-    <label class="govuk-label" for="width-20">
-        Reason for rejection</label>
-    <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
-</div>
-     
             <div class="govuk-form-group">
                 <label class="govuk-label" for="width-20">
-                     Date Application sent to Decision Board Secretariat</label>
+                    Reason for rejection</label>
                 <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
             </div>
 
             <div class="govuk-form-group">
                 <label class="govuk-label" for="width-20">
-                     Date of Decision Board </label>
+                    Date sent to Decision Board Secretariat</label>
+                <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+            </div>
+
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="width-20">
+                    Date of Decision Board </label>
                 <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
             </div>
             <div class="govuk-form-group">
                 <label class="govuk-label" for="width-20">
-                     Approval Board Outcome</label>
+                    Approval Board outcome</label>
                 <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
             </div>
-            <button class="govuk-button" data-module="govuk-button">
+          
+            <a href="#" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
                 Submit
-            </button>
+               
+            </a>
     </div>
 </div>
 
-{% endblock %}  
+{% endblock %}
