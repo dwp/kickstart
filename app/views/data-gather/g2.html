@@ -8,44 +8,328 @@
 
 <body>
     <!-- Copy and paste component HTML-->
+
     <script src="assets/application.js"></script>
 </body>
 
 </html>
 <a href="javascript:history.go(-1)" class="govuk-back-link">Back</a>
+
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-xl"> Manage Kickstart gateway application </h1>
+        <h1 class="govuk-heading-xl">
+            Manage employer application
+        </h1>
+
+
         <nav class="hmcts-sub-navigation" aria-label="Sub navigation">
+
             <ul class="hmcts-sub-navigation__list">
+
                 <li class="hmcts-sub-navigation__item">
-                    <a class="hmcts-sub-navigation__link" href="g1"> Confirm PDF </a>
+                    <a class="hmcts-sub-navigation__link" href="p1">
+                        Confirm PDF
+                    </a>
                 </li>
+
                 <li class="hmcts-sub-navigation__item">
-                    <a class="hmcts-sub-navigation__link" aria-current="page" href="g2"> Process </a>
+                    <a class="hmcts-sub-navigation__link" aria-current="page" href="p2">
+                        Assess
+                    </a>
                 </li>
+
                 <li class="hmcts-sub-navigation__item">
-                    <a class="hmcts-sub-navigation__link" href="g3"> Approve </a>
+                    <a class="hmcts-sub-navigation__link" href="p3">
+                        Approve
+                    </a>
                 </li>
+
             </ul>
+
         </nav>
         <fieldset class="govuk-fieldset">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                <h1 class="govuk-fieldset__heading"> </h1>
+                <h1 class="govuk-fieldset__heading">
+
+                </h1>
             </legend>
             <div class="govuk-form-group">
-                <label class="govuk-label" for="width-20"> Date application received </label>
-                <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text"> </div>
-            <div class="govuk-form-group">
-                <label class="govuk-label" for="width-20"> Expected date application completed </label>
-                <input class="govuk-input govuk-input--width-20" id="width-20"
-                    name="width-20" type="text"> </div>
-            <div class="govuk-form-group">
-                <label class="govuk-label" for="width-20"> Date application processing started </label>
-                <input class="govuk-input govuk-input--width-20" id="width-20"
-                    name="width-20" type="text"> </div>
-<a href="g3" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
-    Save and continue
+                <fieldset class="govuk-fieldset">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                        <h1 class="govuk-fieldset__heading">
+                            Sent for spotlight check
+                        </h1>
+                    </legend>
+                    <div class="govuk-radios govuk-radios--small">
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
+                            <label class="govuk-label govuk-radios__label" for="changed-name">
+                                Yes
+                            </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
+                            <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                                No
+                            </label>
+                        </div>
+                    </div>
 
-</a>    </div>
-</div>{% endblock %}
+                </fieldset>
+                <fieldset class="govuk-fieldset">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                        <h1 class="govuk-fieldset__heading">
+
+                        </h1>
+                    </legend>
+                    <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset">
+                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                                <h1 class="govuk-fieldset__heading">
+                                    Spotlight approved
+                                </h1>
+                            </legend>
+                            <div class="govuk-radios govuk-radios--small">
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
+                                    <label class="govuk-label govuk-radios__label" for="changed-name">
+                                        Yes
+                                    </label>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
+                                    <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+
+                        </fieldset>
+
+                        <fieldset class="govuk-fieldset">
+                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                                <h1 class="govuk-fieldset__heading">
+
+                                </h1>
+                            </legend>
+                            <div class="govuk-form-group">
+                                <fieldset class="govuk-fieldset">
+                                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                                        <h1 class="govuk-fieldset__heading">
+                                            Reason rejected by Spotlight
+                                        </h1>
+                                    </legend>
+                                    <div class="govuk-radios govuk-radios--small">
+                                        <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
+                                            <label class="govuk-label govuk-radios__label" for="changed-name">
+                                                Company is less than one-year old and has a Delphi Score of 10 or Lower
+                                            </label>
+                                        </div>
+                                        <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
+                                            <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                                                Spotlight checks indicate there is a high overall financial viability risk
+                                            </label>
+                                        </div>
+                                        <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
+                                            <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                                                Company is Older than One Year and has a Delphi Score of 5 or Lower
+                                            </label>
+                                        </div>
+                                        <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
+                                            <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                                                Not on Spotlight
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+                            </div>
+                            <div class="govuk-form-group">
+                                <label class="govuk-label" for="width-20">
+                                    Date work started on application
+                                </label>
+                                <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+                            </div>
+                            <div class="govuk-form-group">
+                                <fieldset class="govuk-fieldset">
+                                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                                        <h1 class="govuk-fieldset__heading">
+                                            Assessment criteria approved
+                                        </h1>
+                                    </legend>
+                                    <div class="govuk-radios govuk-radios--small">
+                                        <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
+                                            <label class="govuk-label govuk-radios__label" for="changed-name">
+                                                Yes
+                                            </label>
+                                        </div>
+                                        <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
+                                            <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                                                No
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+                            </div>
+
+                            <div class="govuk-form-group">
+                                <fieldset class="govuk-fieldset">
+                                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                                        <h1 class="govuk-fieldset__heading">
+                                            Contacted employer / Kickstart gateway
+                                        </h1>
+                                    </legend>
+                                    <div class="govuk-radios govuk-radios--small">
+                                        <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
+                                            <label class="govuk-label govuk-radios__label" for="changed-name">
+                                                Yes
+                                            </label>
+                                        </div>
+                                        <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
+                                            <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                                                No
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+                            </div>
+
+                            <div class="govuk-form-group">
+                                <label class="govuk-label" for="width-20">
+                                    Date info request made
+                                </label>
+                                <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+                            </div>
+                            <fieldset class="govuk-fieldset">
+                                <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                                    <h1 class="govuk-fieldset__heading">
+
+                                    </h1>
+                                </legend>
+                                <div class="govuk-form-group">
+                                    <fieldset class="govuk-fieldset">
+                                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                                            <h1 class="govuk-fieldset__heading">
+                                                Reason for rejection
+                                            </h1>
+                                        </legend>
+                                        <div class="govuk-radios govuk-radios--small">
+                                            <div class="govuk-radios__item">
+                                                <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
+                                                <label class="govuk-label govuk-radios__label" for="changed-name">
+                                                    Spotlight Fail
+                                                </label>
+                                            </div>
+                                            <div class="govuk-radios__item">
+                                                <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
+                                                <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                                                    Spotlight No Trace
+                                                </label>
+                                            </div>
+                                            <div class="govuk-radios__item">
+                                                <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
+                                                <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                                                    Ratio not Met
+                                                </label>
+                                            </div>
+                                            <div class="govuk-radios__item">
+                                                <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
+                                                <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                                                    Additionality
+                                                </label>
+                                            </div>
+                                            <div class="govuk-radios__item">
+                                                <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
+                                                <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                                                    Employability
+                                                </label>
+                                            </div>
+                                            <div class="govuk-radios__item">
+                                                <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
+                                                <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                                                    Additionality and Employability
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                    </fieldset>
+                                </div>
+                                <fieldset class="govuk-fieldset">
+                                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                                        <h1 class="govuk-fieldset__heading">
+
+                                        </h1>
+                                    </legend>
+                                    <div class="govuk-form-group">
+                                        <fieldset class="govuk-fieldset">
+                                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                                                <h1 class="govuk-fieldset__heading">
+                                                    Recommended decision
+                                                </h1>
+                                            </legend>
+                                            <div class="govuk-radios govuk-radios--small">
+                                                <div class="govuk-radios__item">
+                                                    <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
+                                                    <label class="govuk-label govuk-radios__label" for="changed-name">
+                                                        Approve
+                                                    </label>
+                                                </div>
+                                                <div class="govuk-radios__item">
+                                                    <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
+                                                    <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                                                        Reject
+                                                    </label>
+                                                </div>
+                                                <div class="govuk-radios__item">
+                                                    <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
+                                                    <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                                                        Duplicate
+                                                    </label>
+                                                </div>
+                                                <div class="govuk-radios__item">
+                                                    <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
+                                                    <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                                                        Withdrawn
+                                                    </label>
+                                                </div>
+                                                <div class="govuk-radios__item">
+                                                    <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
+                                                    <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                                                        Gateway not Employer
+                                                    </label>
+                                                </div>
+                                                <div class="govuk-radios__item">
+                                                    <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
+                                                    <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                                                        Employer not Gateway
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                        </fieldset>
+                                        <div class="govuk-form-group">
+                                            <label class="govuk-label" for="width-20">
+                                                Date sent to Decision Board Secretariat
+                                            </label>
+                                            <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+                                        </div>
+
+
+                                        <a href="p3" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+                                            Save and continue
+
+                                        </a>
+                                    </div>
+                    </div>
+
+                    {% endblock %}
